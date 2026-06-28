@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.question {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 50px;
+}
+
+button {
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#yes-btn {
+    background-color: #00ffcc;
+    color: #0f2027;
+}
+
+#yes-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.6);
+}
+
+#no-btn {
+    background-color: #ff4757;
+    color: white;
+    position: absolute;
+}
+
+.success-box {
+    display: none;
+}
+
+.success-box h2 {
+    font-size: 2.2rem;
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+    margin-bottom: 15px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
